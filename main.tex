@@ -1,0 +1,37 @@
+% ====================
+% Based on the project: http://songs.sourceforge.net/
+% Documentation at: http://songs.sourceforge.net/songsdoc/songs.html
+% Actual tablature from: https://tex.stackexchange.com/a/49156
+% Index from https://tex.stackexchange.com/a/438598
+% Online chord calculator: https://www.imusic-school.com/es/herramientas/acordes-guitarra/
+% ====================
+\documentclass{article}
+
+    % Notas:
+    %   Faltan los bajeos (con LilyPond)
+    %   Falta poner los acordes graficamente
+
+% ALL imports and configuration styles must be into config/main
+\usepackage{config/main}
+
+\begin{document}
+
+    \phantomsection 
+    \hypertarget{indice}{}
+    \tableofcontents
+    \clearpage
+
+    \songsection{Principal}
+    \begin{songs}{}
+
+        \input{src/38_grados/main}
+        \input{src/a_susurros_suaves/main}
+        \input{src/para_mi/main}
+        \input{src/caraluna/main}
+
+    \end{songs}
+    
+    \songsection{Bajeos}
+        \input{examples/bajeo_de_ejemplo.tex}
+    
+\end{document}
